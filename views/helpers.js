@@ -1,9 +1,9 @@
 module.exports = {
-     getError(errors, propertyName) {
-        try {
-          return errors.mapped()[propertyName].msg;
-        } catch (err) {
-          return "";
-        }
-}
-}
+  getError(errors, prop) {
+    try {
+      return errors.mapped()[prop].msg;
+    } catch (err) {
+      return '';
+    }
+  }
+};
